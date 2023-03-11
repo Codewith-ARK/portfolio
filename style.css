@@ -93,3 +93,8 @@ hr {
     animation: mymove 1s;
     animation-iteration-count: infinite;
 }
+@media only screen and (max-width: 768px) {
+    body {
+        margin: 14px;
+    }
+  }
