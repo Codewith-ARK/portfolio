@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Roboto&display=swap');
+body {
+    /* Body Text */
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+.web-page-title {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.title-heading {
+    font-family: 'Outfit', sans-serif;
+    font-size: 58px;
+    font-weight: 700;
+    color: #fff;
+    
+    line-height: 100%;
+    text-transform: capitalize;
+}
+
+.sub-heading {
+    font-family: 'Outfit', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #A0D5D5;
+
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+}
+
+
+.button {
+    /* in addition to 'sub-heading' */
+    text-decoration: none;
+    color: #fff;
+    
+    background-color: #8D8DDB;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.nav-links {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    
+    text-transform: lowercase;
+    text-decoration: none;
+    
+    margin-left: 28px;
+    float: right;
+}
