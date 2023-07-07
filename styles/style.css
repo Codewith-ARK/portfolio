@@ -29,9 +29,19 @@ nav>a {
     text-decoration: none;
     font-size: 1rem;
     text-transform: uppercase;
+    color: black;
     font-family: "Outfit", sans-serif;
     font-weight: 700;
-    color: black;
+
+    border-bottom: 4px solid #a020f000;
+    transition: border-bottom 0.2s ease-in-out;
+
+}
+nav>a#active{
+    border-bottom: 4px solid #a020f0;
+}
+nav>a:hover {
+    border-bottom: 4px solid #a020f0;
 }
 
 .hero-wrapper {
@@ -51,15 +61,20 @@ nav>a {
     object-fit: contain;
     background-image: url("https://picsum.photos/240");
 }
+
 .text-wrapper {
     display: flex;
     align-items: center;
     font-size: 1.25rem;
 }
+
 .hero-wrapper>.hero-title,
 .job-title {
     font-family: "Outfit", sans-serif;
     text-transform: uppercase;
+}
+.hero-title{
+    color: #a020f0;
 }
 
 hr {
@@ -70,13 +85,14 @@ hr {
     text-align: center;
     margin: 0 auto;
 }
+
 .about>.img-wrapper>img {
     border-radius: 0.5rem;
     box-shadow: 9px 9px black;
 }
+
 @media (max-width: 768px) {
     .text-wrapper {
-      display: block;
+        display: block;
     }
-  }
-  
+}
