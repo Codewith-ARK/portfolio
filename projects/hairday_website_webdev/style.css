@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bruno+Ace+SC&family=Cabin:wght@400;700&family=El+Messiri&family=Oswald:wght@400;700&family=Poppins&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+h3 {
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    font-size: 20px;
+}
+h2 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 0.2rem;
+    font-size: 2.375rem;
+}
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 8px; */
+}
+nav>a {
+    padding: 10px;   
+
+    color: #d0604c;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    transition: 0.3s;
+}
+nav>a:hover {
+    background-color: #d0604c;
+    color: #fff;
+    padding: 10px 16px;
+    /* transition: 0.3s; */
+}
+nav>a:active {
+    background-color: #c25845;
+}
+#main-logo {
+    width: 200px;
+}
+#hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #e7b9b1;
+
+}
+#hero-text {
+    margin-top: 14px;
+    font-size: 22px;
+    color: #c25845;
+    font-weight: 700;
+}
+#why-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    background-color: #d0604c;
+    padding: 64px;
+}
+.quality {
+    display: flex;
+    width: 550px;
+    background-color: #f58d7a;
+    border-radius: 8px;
+    box-shadow: 10px 10px #e9d0bd;
+    transition: 0.3s;
+}
+.quality:hover{
+    background-color: #c25845;
+    transform: translate(-8px, -8px);
+    box-shadow: 14px 14px #e9d0bd;
+    cursor: pointer;
+}
+.quality img {
+    width: 50%;
+    display: inline-block;
+    border-radius: 0 8px 8px 0;
+    filter: grayscale(100%);
+}
+.quality-text-wrapper {
+    padding: 16px;
+}
+.quality-text-wrapper>h3 {
+    font-family: 'Oswald';
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+.quality-text-wrapper>p{
+    color: #f5f2f2ce;
+}
+#booking {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#booking>div>h2, #booking>div>p {
+    color: black;
+    font-size: 1rem;
+}
+#booking>div>h2 {
+    font-size: 2rem;
+}
+#cta-link {
+    color: rgb(117, 116, 116);
+    font-weight: 700; 
+    font-size: 1.1rem; 
+    text-transform:capitalize;
+    letter-spacing: 0.1rem;
+}
+#cta-link:hover {
+    color: #c25845;
+    text-decoration: none;
+    transition: 0.3s;
+}
+#tutorials {
+    background-color: #e7b9b1;
+    text-align: center;
+    padding: 64px 0;
+}
+#tutorials h2 {
+    margin-bottom: 18px;
+}
+.tuts-wrapper {
+    display: flex;
+    justify-content: center;   
+    gap: 24px;
+}
+.tuts {
+    width: 250px;
+    background-color: #f58d7a;
+    border-radius: 12px;
+    transition: 0.3s;
+    text-align: left;
+    cursor: pointer;
+}
+.tuts:hover {
+    background-color: #d0604c;
+
+}
+.tuts h3{
+    font-family: 'Oswald';
+}
+.tuts .date {
+    color: #353535;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.tuts p {
+    color: #f5f2f2ce;
+}
+.tuts img {
+    width: 100%;
+    object-fit: cover;
+    height: 180px;
+    border-radius: 12px 12px 0 0;
+    filter: grayscale(100%);
+}
+.tuts .tuts-text-wrapper {
+    padding: 14px;
+}
+.tuts:hover {
+    box-shadow: 8px 8px rgb(71, 71, 71);
+    transform: translate(-8px, -8px);
+}
+#footer {
+    background-color: rgb(71, 71, 71);
+    height: 64px;
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+    padding: 0 8px;
+}
+#footer h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}

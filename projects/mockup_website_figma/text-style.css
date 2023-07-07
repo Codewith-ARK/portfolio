@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Roboto&display=swap');
+
+/* font-family: 'Outfit', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+.body-text {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+.main-heading {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    line-height: 100%;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+}
+.nav-bar .links {
+    margin-left: 28px;
+}
+.links {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: lowercase;
+    text-decoration: none;
+    float: right;
+}
+.H1 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 58px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: capitalize;
+}
+.H2 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 100%;
+    text-transform: capitalize;
+    color: #fff;
+}
+.sub-heading {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    color: #fff;
+}
+.colored-subheading {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    color: #A0D5D5;
+}

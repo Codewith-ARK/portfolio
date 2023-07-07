@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bruno+Ace+SC&family=Cabin:wght@400;700&family=El+Messiri&family=Oswald:wght@400;700&family=Poppins&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+#about-heading {
+    height: 33vh;
+    background-color: #e7b9b1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+#about-heading h1 {
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    font-size: 2.375rem;
+}
+#about-heading p {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 22px;
+}
+#boss {
+    padding-top: 24px;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+.person {
+    border: 1px solid rgb(184, 183, 183);
+    box-shadow: 8px 8px rgb(71, 71, 71);
+    width: 250px;
+    border-radius: 14px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+
+    transition: 0.3s;
+
+}
+.person img {
+    border-radius: 50%;
+    width: 128px;
+    height: 128px;
+    object-fit: cover;
+    filter: grayscale(100%);
+}
+.person .title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 18px;
+    color: #d0604c;
+}
+.person .desc {
+    color: #a0a0a0;
+}
+
+#employees {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 48px;
+
+    margin-bottom: 64px;
+
+}
+
+.employee {
+    border: 1px solid rgb(184, 183, 183);
+    box-shadow: 8px 8px rgb(71, 71, 71);
+    width: 150px;
+    border-radius: 14px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    
+    transition: 0.3s;
+}
+.employee:hover, .person:hover {
+    transform: translate(-8px, -8px);
+    box-shadow: 16px 16px rgb(71, 71, 71);
+    cursor: pointer;
+}
+.employee img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit:cover;
+    filter: grayscale(100%);
+}
+.employee .title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 18px;
+    color: #d0604c;
+}
+.employee .desc {
+    color: #a0a0a0;
+}

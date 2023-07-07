@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Hair Day</title>
+
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <nav>
+          <a href="../index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    
+    <section id="contact">
+        <div id="contact-heading">
+            <h1>Contact</h1>
+            <p>Queries? Appointments? Consultation? Don't hesitate to reach out!</p>
+        </div>
+        <form method="post">
+            <div>
+                <label for="name">Name*</label>
+                <input type="text" placeholder="Full Name" id="name" required minlength="3">
+            </div>
+
+            <div>
+                <label for="email">Email*</label>
+                <input type="email" placeholder="Email" name="email" id="email" required>
+            </div>
+            
+            <div>
+                <label for="num">Number*</label>
+                <input type="text" placeholder="Contact Number" id="num" required minlength="10">
+            </div>
+            <div>
+                <label for="appt-date">Appointment Date*</label>
+                <input type="date" name="Appointment Time" id="appt-date" required>
+            </div>
+            <div>
+                <label for="appt-time">Appointment Time*</label>
+                <input type="time" name="Appointment Time" id="appt-time" required>
+            </div>
+            
+            <div>
+                <input type="checkbox" name="opt1" id="opt1" value="Nails">
+                <label for="opt1">Nails</label>
+            </div>
+            
+            <div>
+                <input type="checkbox" name="opt2" id="opt2" value="Hair Cut">
+                <label for="opt2">Hair Cut</label>
+            </div>
+            <div>
+                <input type="checkbox" name="opt3" id="opt3" value="Hair Color">
+                <label for="opt3">Hair Color</label>
+            </div>
+            
+            <div id="select-color">
+                <label for="hair-clr">Choose a Hair Color:</label>
+                <input type="color" id="hair-clr">
+            </div>
+
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </section>
+    
+    <footer id="footer">
+        <h3>Copyright Hair Day 2023</h3>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

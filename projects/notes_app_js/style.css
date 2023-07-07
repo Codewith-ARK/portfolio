@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+:root {
+    --h1-txt-clr: #0E8388;
+    --border-clr: #0E8388;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: var(--var1);
+    background-color: rgb(30, 30, 30);
+}
+p, h1 {
+    color: #fefe;
+    font-family: 'Outfit';
+}
+label {
+    font-size: 16px;
+    font-family: 'Outfit', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    color: #fefe;
+}
+input, textarea {
+    border-radius: 4px;
+    border: 1px solid var(--border-clr);
+    font-size: 14px;
+    font-family: 'Outfit', sans-serif;
+    display: block;
+    height: 100px;
+    width: 350px;
+    margin-bottom: 14px;
+    padding: 6px;
+    background-color: rgba(255, 238, 255, 0.836);
+}
+#title {
+    font-size: 16px;
+    height: 40px;
+    font-weight: 700;
+    color: #3b3b3b;
+}
+
+#card-cont {
+    padding: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+}
+.card{
+    padding: 12px;
+    
+    width: 250px;
+    
+    min-height: 150px;
+    max-height: fit-content;
+
+    border: 1px solid var(--border-clr);
+    border-radius: 4px;
+
+    font-family: 'Outfit', sans-serif;
+    position: relative;
+}
+.card>.card-h1 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+.card>.card-p {
+    font-size: 16px;
+}
+.card>hr {
+    margin: 4px 0;
+    border: none;
+    height: 1px;
+    background-color: #655dbb46;
+    width: 100%;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 14px 0;
+}
+
+#crt-card-bt {
+    padding: 12px; 
+    
+    font-family: 'Outfit', sans-serif;  
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fefe;
+    
+    background-color: #0E8388;
+    border: none;
+    border-radius: 4px;
+}
+#crt-card-bt:hover {
+    transition: 0.2s;
+    cursor: pointer;
+    background-color: #2E4F4F;
+}
+.delete-bt {
+    width: 30px;
+    height: 30px;
+    background-color: #6b6b6b;
+    border-radius: 15px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.delete-bt>img {
+    text-align: center;
+    margin: 5px;
+    width: 20px;
+    height: 20px;
+}
