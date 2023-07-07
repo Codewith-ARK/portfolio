@@ -1,3 +1,55 @@
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 0.875rem;
+}
+
+nav>a {
+  text-decoration: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: black;
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+
+  border-bottom: 4px solid #a020f000;
+  transition: border-bottom 0.2s ease-in-out;
+
+}
+
+nav>a:hover {
+  border-bottom: 4px solid #a020f0;
+}
+
+nav>a#active {
+  border-bottom: 4px solid #a020f0;
+}
+
+footer {
+  padding: 1.25rem;
+  margin-top: 1.25rem;
+  background-color: #a020f0;
+  color: #fff;
+  font-weight: 700;
+}
+
+hr {
+  width: 25%;
+  border-top: 10px dotted var(--light-gray);
+  border-bottom: none;
+  border-right: none;
+  border-left: none;
+  height: 3px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.txt-rtl {
+  text-align: right;
+}
+
 .fl-row {
   display: flex;
   flex-direction: row;
@@ -20,6 +72,10 @@
 
 .col-2 {
   width: 50%;
+}
+
+.col-4 {
+  width: 25%;
 }
 
 ::selection {
@@ -56,16 +112,6 @@
   background-color: #a020f04b;
 }
 
-/* Always show scrollbars on mobile devices */
-::-webkit-scrollbar {
-  -webkit-appearance: none;
-}
-
-/* Force scrollbar to show up even if content does not overflow */
-::-webkit-scrollbar {
-  overflow: scroll;
-}
-
 /*? Media Query ?*/
 @media only screen and (max-width: 768px) {
 
@@ -78,5 +124,9 @@
   .col-2 {
     width: 100%;
     margin: 0.75rem;
+  }
+
+  footer {
+    text-align: center;
   }
 }
