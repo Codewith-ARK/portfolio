@@ -46,11 +46,15 @@
     border-radius: 8px;
     flex-grow: 1;
     position: relative;
+    transition: all 0.2s ease-in-out;
 }
 
 .card:hover {
     background-color: #f0f0f0;
     transition: 0.5s;
+    box-shadow: 8px 8px hsl(277, 87%, 50%);
+    cursor: pointer;
+    transform: translate(-8px, -8px);
 }
 .lang-indicator {
     padding: 8px;
@@ -75,7 +79,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 0.75rem;
+    gap: 1.25rem;
 }
 
 .new-indicator {
