@@ -1,0 +1,19 @@
+.fl-row {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.fl-col {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+}
+.fl-justify-center{
+  justify-content: center;
+  align-items: center;
+}
+.col-2 {
+  width: 50%;
+}
