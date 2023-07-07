@@ -23,7 +23,15 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .fl-row, .fl-col {
-      flex-wrap: wrap;
+
+  .fl-row,
+  .fl-col {
+    flex-wrap: wrap;
+    align-content: center;
+  }
+
+  .col-2 {
+    width: 100%;
+    margin: 0.75rem;
   }
 }

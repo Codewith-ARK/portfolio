@@ -11,6 +11,7 @@
 
 body {
     font-family: "Outfit", sans-serif;
+    margin: 0px 150px 0;
 }
 
 main {
@@ -37,9 +38,11 @@ nav>a {
     transition: border-bottom 0.2s ease-in-out;
 
 }
-nav>a#active{
+
+nav>a#active {
     border-bottom: 4px solid #a020f0;
 }
+
 nav>a:hover {
     border-bottom: 4px solid #a020f0;
 }
@@ -73,7 +76,8 @@ nav>a:hover {
     font-family: "Outfit", sans-serif;
     text-transform: uppercase;
 }
-.hero-title{
+
+.hero-title {
     color: #a020f0;
 }
 
@@ -92,7 +96,19 @@ hr {
 }
 
 @media (max-width: 768px) {
+    body {
+        margin: 0.75rem;
+        margin: 0;
+
+    }
+
     .text-wrapper {
         display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .project-container {
+        margin: 0.75rem;
     }
 }
