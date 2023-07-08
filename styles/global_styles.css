@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 nav {
   display: flex;
   justify-content: center;
@@ -70,7 +75,7 @@ hr {
   align-items: center;
 }
 
-.col-2 {
+.space-50 {
   width: 50%;
 }
 
@@ -121,7 +126,7 @@ hr {
     align-content: center;
   }
 
-  .col-2 {
+  .space-50 {
     width: 100%;
     margin: 0.75rem;
   }
@@ -129,4 +134,9 @@ hr {
   footer {
     text-align: center;
   }
+
+  .txt-rtl {
+    text-align: center;
+  }
+
 }
