@@ -18,23 +18,23 @@ nav a {
   font-family: "Outfit", sans-serif;
   font-weight: 700;
 
-  border-bottom: 4px solid #a020f000;
+  border-bottom: 4px solid var(--dark-purple)00;
   transition: border-bottom 0.2s ease-in-out;
 
 }
 
 nav>a:hover {
-  border-bottom: 4px solid #a020f0;
+  border-bottom: 4px solid var(--dark-purple);
 }
 
 nav>a#active {
-  border-bottom: 4px solid #a020f0;
+  border-bottom: 4px solid var(--dark-purple);
 }
 
 footer {
   padding: 1.25rem;
   margin-top: 1.25rem;
-  background-color: #a020f0;
+  background-color: var(--dark-purple);
   color: #fff;
   font-weight: 700;
 }
@@ -83,7 +83,7 @@ hr {
 }
 
 ::selection {
-  background-color: #a020f091;
+  background-color: var(--dark-purple)91;
   color: #fff;
 }
 
@@ -96,9 +96,9 @@ hr {
   border-radius: 0;
 }
 
-/* Set the scrollbar color to #a020f0 */
+/* Set the scrollbar color to var(--dark-purple) */
 ::-webkit-scrollbar-thumb {
-  background-color: #a020f0;
+  background-color: var(--dark-purple);
 }
 
 /* When the scrollbar is hovered, increase its width by 2px */
@@ -113,7 +113,7 @@ hr {
 
 /* Set the opacity of the scrollbar tracker to 50% */
 ::-webkit-scrollbar-track {
-  background-color: #a020f04b;
+  background-color: var(--dark-purple)4b;
 }
 
 /*? Media Query ?*/

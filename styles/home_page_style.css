@@ -3,9 +3,12 @@
 :root {
     --light-gray: #dfdfdfee;
 }
+html{
+    scroll-behavior: smooth;
+}
 body {
     font-family: "Outfit", sans-serif;
-    background-color: #f5f5f5;    
+    background-color: #f5f5f5;
 }
 
 /* Homepage's implementation of nav's color */
@@ -69,7 +72,7 @@ nav a {
 }
 
 .hero-title {
-    color: #a020f0;
+    color: var(--dark-purple);
 }
 
 .about>.img-wrapper>img {
@@ -80,6 +83,9 @@ nav a {
 @media (max-width: 768px) {
     .hero-wrapper {
         padding: 0.75rem;
+    }
+    .hero-title{
+        font-size: 2rem;
     }
 
     .text-wrapper {
