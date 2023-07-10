@@ -4,9 +4,11 @@
     --light-gray: #dfdfdfee;
     --dark-purple: #a020f0;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
+
 body {
     font-family: "Outfit", sans-serif;
     background-color: #f5f5f5;
@@ -22,6 +24,7 @@ nav a {
 #projects {
     margin: 0px 9.375rem 0;
 }
+
 .hero-wrapper {
     display: flex;
     flex-direction: column;
@@ -33,15 +36,18 @@ nav a {
 }
 
 /* Hero's BG image */
-#waves-right, #waves-left{
+#waves-right,
+#waves-left {
     position: absolute;
     z-index: -1;
 }
-#waves-right{
+
+#waves-right {
     top: 0;
     right: 0;
 }
-#waves-left{
+
+#waves-left {
     bottom: 0;
     left: 0;
 }
@@ -81,11 +87,35 @@ nav a {
     box-shadow: 9px 9px black;
 }
 
+#skills {
+    margin: 0px 9.375rem 0px;
+}
+
+/* .skill-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75em;
+    flex-wrap: wrap;
+} */
+.skill-card {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.skill-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
 @media (max-width: 768px) {
     .hero-wrapper {
         padding: 0.75rem;
     }
-    .hero-title{
+
+    .hero-title {
         font-size: 2rem;
     }
 
@@ -97,5 +127,9 @@ nav a {
 
     #projects {
         margin: 0.75rem;
-    }    
+    }
+
+    #skills {
+        margin: 0.75rem;
+    }
 }
