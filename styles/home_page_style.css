@@ -102,12 +102,16 @@ nav a {
 .skill-card {
     max-width: 100px;
     max-height: 100px;
+    background: rgb(160, 32, 240);
+    background: linear-gradient(132deg, rgb(187 83 252) 0%, rgb(73 4 142) 100%);
+    /* background: linear-gradient(132deg, rgba(160,32,240,1) 0%, rgba(3,0,6,1) 100%); This is the dark varition */
 }
 
 .skill-card img {
     width: 100px;
     height: 100px;
     object-fit: contain;
+    mix-blend-mode: luminosity;
 }
 
 @media (max-width: 768px) {
