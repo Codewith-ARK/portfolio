@@ -2,6 +2,12 @@
   --dark-purple: #a020f0;
 }
 
+::selection {
+  background-color: #d3a0f3;
+  color: #fff;
+  mix-blend-mode: lighten;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -99,10 +105,6 @@ hr {
   row-gap: 18px;
 }
 
-::selection {
-  background-color: var(--dark-purple)91;
-  color: #fff;
-}
 
 /*? Scrollbar ?*/
 
@@ -167,8 +169,8 @@ hr {
   }
 }
 
-@media (min-width: 1024px){
-  .grid{
+@media (min-width: 1024px) {
+  .grid {
     grid-template-columns: 25% 25% 25% 25%;
   }
 }
