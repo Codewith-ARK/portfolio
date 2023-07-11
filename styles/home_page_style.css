@@ -89,49 +89,31 @@ nav a {
 
 #skills {
     margin: 0px 9.375rem 0px;
-    min-height: 100vh;
 }
 
-/* .skill-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 0.75em;
-    flex-wrap: wrap;
-} */
 .skill-card {
-    /* border: 1px solid var(--dark-purple) !important; */
     max-width: 100px;
     max-height: 100px;
-    /*! Contradicts with my design aesthetic !*/
-    /* background: rgb(160, 32, 240); */
-    /* background: linear-gradient(132deg, rgb(187 83 252) 0%, rgb(73 4 142) 100%); */
-    /* background: linear-gradient(132deg, rgba(160,32,240,1) 0%, rgba(3,0,6,1) 100%); This is the dark varition */
 }
 
 .skill-card img {
     width: 100px;
     height: 100px;
     object-fit: contain;
-    /*! Contradicts with my design aesthetic !*/
-    /* mix-blend-mode: luminosity; */
 }
 
 #contact {
-    height: 50vh;
     margin: 16px 9.375rem 0px;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-    background-color: var(--dark-purple);
-    padding: 16px;
-    border-radius: 8px;
+    background-color: #a020f0;
+    padding: 1em;
+    border-radius: 0.5em;
 }
 
 #contact h2 {
+    text-align: center;
     color: #fff;
-    border-left: 10px solid #fff;
+    border-left: none;
+    padding-left: 0;
 }
 
 form {
@@ -143,35 +125,31 @@ form {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 16px;
-    padding: 12px;
-    font-family: "Outfit", sans-serif;
 }
 
 form input {
-    font-size: 16px;
-    padding: 16px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1em;
+    padding: 1em;
     border-radius: 8px;
     border: 1px solid var(--light-gray);
+    flex-grow: 1;
 }
 
 form input[type=submit] {
-    border: 2px solid var(--dark-purple);
+    border: 2px solid #fff;
+    background-color: #ffffff00;
+    color: #fff;
+    text-transform: uppercase;
     font-weight: 700;
-    transition: color 0.3s;
-    /* color: var(--light-gray); */
-    color: #4b4b4bee;
+    transition: all 0.3s ease-in-out;
 }
 
 form input[type=submit]:hover {
-    background-color: var(--dark-purple);
+    border: 2px solid #ffffff00;
+    background-color: #6600a5;
     color: #fff;
 }
-
-form input[type=submit]:active {
-    background-color: var(--dark-purple);
-    color: #fff;
-}
-
 
 @media (max-width: 768px) {
     .hero-wrapper {
@@ -188,14 +166,20 @@ form input[type=submit]:active {
         text-align: center;
     }
 
-    #projects, #skills, #contact {
+    #projects,
+    #skills,
+    #contact {
         margin: 0.75rem;
-    }
-    #contact{
-        padding: 16px;
     }
 
     form {
         width: 100%;
+    }
+}
+
+@media (min-width: 1024px) {
+    form {
+        /*? Makes the contact forum aesthetically pleasing ?*/
+        padding: 12px;
     }
 }
