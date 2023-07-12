@@ -8,6 +8,23 @@
   mix-blend-mode: lighten;
 }
 
+/*? Scrollbar ?*/
+/* Set the scrollbar to be square with no rounded edges */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Set the scrollbar color to var(--dark-purple) */
+::-webkit-scrollbar-thumb {
+  background-color: var(--dark-purple);
+}
+
+/* Set the opacity of the scrollbar tracker to 50% */
+::-webkit-scrollbar-track {
+  background-color: var(--dark-purple)4b;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -27,6 +44,7 @@ nav a {
   text-transform: uppercase;
   font-family: "Outfit", sans-serif;
   font-weight: 700;
+  color: #000;
 
   border-bottom: 4px solid #a020f000;
   transition: border-bottom 0.2s ease-in-out;
@@ -76,12 +94,15 @@ hr {
   flex-direction: column;
   gap: 12px;
   flex-wrap: nowrap;
-
 }
 
 .fl-justify-center {
   justify-content: center;
   align-items: center;
+}
+
+.space-75{
+  width: 75%;
 }
 
 .space-50 {
@@ -103,36 +124,6 @@ hr {
   grid-template-columns: 20% 20% 20% 20% 20%;
   justify-items: center;
   row-gap: 18px;
-}
-
-
-/*? Scrollbar ?*/
-
-/* Set the scrollbar to be square with no rounded edges */
-::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-  border-radius: 0;
-}
-
-/* Set the scrollbar color to var(--dark-purple) */
-::-webkit-scrollbar-thumb {
-  background-color: var(--dark-purple);
-}
-
-/* When the scrollbar is hovered, increase its width by 2px */
-::-webkit-scrollbar-thumb:hover {
-  width: 12px;
-}
-
-/* When the scrollbar is inactive, shrink its width by 2px */
-::-webkit-scrollbar-thumb:inactive {
-  width: 8px;
-}
-
-/* Set the opacity of the scrollbar tracker to 50% */
-::-webkit-scrollbar-track {
-  background-color: var(--dark-purple)4b;
 }
 
 /*? Media Query ?*/
