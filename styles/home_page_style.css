@@ -105,8 +105,8 @@ nav a {
 #contact {
     margin: 16px 9.375rem 0px;
     background-color: #a020f0;
-    padding: 1em;
-    border-radius: 0.5em;
+    padding: 1rem;
+    border-radius: 0.5rem;
 }
 
 #contact h2 {
@@ -119,38 +119,39 @@ nav a {
 form {
     margin: auto;
     width: 50%;
+
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 1rem;
 }
 
 form label {
     width: 100%;
     color: #fff;
     font-weight: 700;
-    font-size: large;
+    font-size: 1.5rem;
 }
 
 form input {
-    font-family: 'Outfit', sans-serif;
-    font-size: 1em;
-    padding: 1em;
-    border-radius: 8px;
-    border: 1px solid var(--light-gray);
-    flex-grow: 1;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    /* border: 1px solid var(--light-gray); */
+    border: none;
+    /* flex-grow: 1; */
+    width: 100%;
 }
 form textarea{
     resize: none;
     width: 100%;
     height: 200px;
+    border: none;
 
-    font-family: "Outfit", sans-serif;
-    padding: 16px;
+    font-family: inherit;
+    padding: 1rem;
     font-size: 1rem;
-    border-radius: 8px;
+    border-radius: 0.5rem;
 }
 form input[type=submit] {
     border: 2px solid #fff;
@@ -189,6 +190,7 @@ form input[type=submit]:hover {
         margin: 0.75rem;
     }
 
+    /*? occupies complete screen ?*/
     form {
         width: 100%;
     }
