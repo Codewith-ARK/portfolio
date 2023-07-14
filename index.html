@@ -184,7 +184,7 @@
 		</section>
 		<section id="contact">
 			<h2>Contact Me</h2>
-			<form class="contact-form" method="post" action="send.php">
+			<form class="contact-form" method="POST" action="https://formsubmit.co/4d6c2573499e4ea054a3916c136adc14 ">
 				<label for="username">Name</label>
 				<input type="text" name="username" id="username" placeholder="Enter name" required>
 				<label for="email">Email</label>
@@ -192,6 +192,11 @@
 				<label for="message">Message</label>
 				<textarea name="message" id="message" placeholder="Your message" required></textarea>
 				<input type="submit" value="Send Message" name="submit">
+
+				<input type="hidden" name="_template" value="table">
+				<input type="hidden" name="_captcha" value="false">
+				<input type="hidden" name="_subject" value="Response from Contact me">
+				<input type="hidden" name="_autoresponse" value="Thank you for contacting me at: iamARK.tech. I will reach out to you as soon as possible. :D">
 			</form>
 		</section>
 	</main>
