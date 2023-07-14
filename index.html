@@ -76,7 +76,7 @@
 				<div class="skill-card card ">
 					<img src="assets/ai.png" alt="skill logo">
 				</div>
-
+			</div>
 		</section>
 
 		<section id="projects">
@@ -85,7 +85,7 @@
 				<div class="">
 					<h2 class="">Projects</h2>
 				</div>
-				
+
 				<div class="card-container">
 					<a href="projects/whatsapp_flutter/index.html" target="_blank" rel="noopener noreferrer">
 						<div class="card">
@@ -94,7 +94,8 @@
 							<div class="elipse"></div>
 							<p class="date">27 June 2023</p>
 							<p class="description">
-								Utilized Flutter and Firebase technologies to build a robust and scalable messaging platform resembling WhatsApp.
+								Utilized Flutter and Firebase technologies to build a robust and scalable messaging platform resembling
+								WhatsApp.
 							</p>
 							<div class="lang-indicator flutter-lang">
 								<div class="flutter-elipse lang-elipse"></div>
@@ -139,8 +140,10 @@
 							<div class="elipse"></div>
 							<p class="date">10 Mar 2022</p>
 							<p class="description">
-								A functional notes/to-do list application built using JavaScript. Allowing users to add, edit, and remove notes and to-do items.
-								Designed the application with a visually appealing interface, focusing on a user-friendly and intuitive design.
+								A functional notes/to-do list application built using JavaScript. Allowing users to add, edit, and
+								remove notes and to-do items.
+								Designed the application with a visually appealing interface, focusing on a user-friendly and intuitive
+								design.
 								Ensured smooth functionality and responsiveness of the application across different devices.
 							</p>
 							<div class="lang-indicator js-lang">
@@ -158,7 +161,8 @@
 							<div class="elipse"></div>
 							<p class="date">10 Mar 2022</p>
 							<p class="description">
-								A design mockup created for a fictional crypto comapny. The project was designed in figma and developed using HTMl, CSS and JavaScript
+								A design mockup created for a fictional crypto comapny. The project was designed in figma and developed
+								using HTMl, CSS and JavaScript
 							</p>
 							<div class="lang-indicator html-lang">
 								<div class="html-elipse lang-elipse"></div>
@@ -174,7 +178,7 @@
 							</div>
 							<div class="lang-indicator figma-lang">
 								<div class="figma-elipse lang-elipse"></div>
-								<p class="p-lang">JavaScript</p>
+								<p class="p-lang">Figma</p>
 							</div>
 						</div>
 					</a>
@@ -182,16 +186,16 @@
 				</div> <!--card container-->
 			</div> <!--project container-->
 		</section>
-
 		<section id="contact">
-			<div class="">
-				<h2 class="">Contact Me</h2>
-			</div>
-			<form action="post">
-				<input type="text" name="username" id="username" placeholder="name">
-				<input type="email" name="email" id="email" placeholder="email" required />
-				<input type="text" name="message" id="message" placeholder="message" required>
-				<input type="submit" value="send">
+			<h2 >Contact Me</h2>
+			<form class="contact-form" method="post" action="send.php">
+					<label for="username">Name</label>
+					<input type="text" name="username" id="username" placeholder="Your name" required>
+					<label for="email">Email</label>
+					<input type="email" name="email" id="email" placeholder="Your email" required>
+					<label for="message">Message</label>
+					<textarea name="message" id="message" placeholder="Your message" required></textarea>
+					<input type="submit" value="Send Message" name="submit">
 			</form>
 		</section>
 	</main>
@@ -199,6 +203,9 @@
 		<div class="space-50">&copy; Abdul Rehman Khan. All rights reserved.</div>
 		<div class="space-50 txt-rtl">Designer - Developer - Content Writer</div>
 	</footer>
+
+	<script src="scripts/index.js"></script>
+
 </body>
 
 </html>
