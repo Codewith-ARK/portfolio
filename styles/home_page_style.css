@@ -78,6 +78,8 @@ nav a {
 
     color: #fff;
     border: none;
+    margin: auto;
+
 }
 
 #contact-me:hover {
@@ -235,9 +237,7 @@ form input[type=submit]:hover {
     .social-links {
         align-items: center;
     }
-    #contact-me{
-        margin: auto;
-    }
+
 }
 
 @media (min-width: 1024px) {
