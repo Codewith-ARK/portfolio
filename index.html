@@ -12,12 +12,15 @@
 	<link rel="stylesheet" href="styles/eplipses.css" />
 	<link rel="stylesheet" href="styles/global__styles.css" />
 	<link rel="stylesheet" href="styles/global__text_style.css">
+
+	<script src="scripts/index.js"></script>
+	<script src="https://kit.fontawesome.com/8d6806cdef.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 	<nav>
 		<a href="#hero" id="active">Home</a>
-		<a href="#skills">Skill</a>
+		<a href="#skills">Skills</a>
 		<a href="#projects">Projects</a>
 		<a href="#contact">Contact</a>
 	</nav>
@@ -29,13 +32,20 @@
 					<h1 class="hero-title">Abdul Rehman Khan</h1>
 					<h3 class="job-title">Front End Developer</h3>
 				</div>
-				<div class="text-wrapper space-50">
-					Hello There! I am Abdul Rehman Khan (ARK for short), a front end web developer. I like to design and develop
-					websites that are practical and easy to use by the end-user.
+				<div class="fl-col space-50">
+					<div class="text-wrapper">
+						Hello There! I am Abdul Rehman Khan (ARK for short), a front end web developer. I like to design and develop
+						websites that are practical and easy to use by the end-user.
+					</div>
+					<div class="fl-row">
+						<!--! Looks ugly !-->
+						<!-- <a href="#" id="hire-me" class="button">Hire Me</a> -->
+						<a href="#contact" id="contact-me" class="button">Hire Me</a>
+					</div>
 				</div>
-				<img id="waves-right" src="assets/waves-right.svg" alt="bg image">
-				<img id="waves-left" src="assets/waves-left.svg" alt="bg image">
 			</div>
+			<img id="waves-right" src="assets/waves-right.svg" alt="bg image">
+			<img id="waves-left" src="assets/waves-left.svg" alt="bg image">
 		</section>
 
 		<section id="skills">
@@ -184,28 +194,58 @@
 		</section>
 		<section id="contact">
 			<h2>Contact Me</h2>
-			<form class="contact-form" method="POST" action="https://formsubmit.co/4d6c2573499e4ea054a3916c136adc14 ">
-				<label for="username">Name</label>
-				<input type="text" name="username" id="username" placeholder="Enter name" required>
-				<label for="email">Email</label>
-				<input type="email" name="email" id="email" placeholder="Enter email" required>
-				<label for="message">Message</label>
-				<textarea name="message" id="message" placeholder="Your message" required></textarea>
-				<input type="submit" value="Send Message" name="submit">
+			<div class="fl-row">
 
-				<input type="hidden" name="_template" value="table">
-				<input type="hidden" name="_captcha" value="false">
-				<input type="hidden" name="_subject" value="Response from Contact me">
-				<input type="hidden" name="_autoresponse" value="Thank you for contacting me at: iamARK.tech. I will reach out to you as soon as possible. :D">
-			</form>
+
+				<div class="space-50">
+					<form class="contact-form" method="POST" action="https://formsubmit.co/4d6c2573499e4ea054a3916c136adc14 ">
+						<label for="username">Name</label>
+						<input type="text" name="username" id="username" placeholder="Enter name" required>
+						<label for="email">Email</label>
+						<input type="email" name="email" id="email" placeholder="Enter email" required>
+						<label for="message">Message</label>
+						<textarea name="message" id="message" placeholder="Your message" required></textarea>
+						<input type="submit" value="Send Message" name="submit">
+
+						<input type="hidden" name="_template" value="table">
+						<input type="hidden" name="_captcha" value="false">
+						<input type="hidden" name="_subject" value="Response from Contact me">
+						<input type="hidden" name="_autoresponse"
+							value="Thank you for contacting me at: iamARK.tech. I will reach out to you as soon as possible. :D">
+					</form>
+				</div>
+				<div class="space-50 social-links fl-col">
+					<h2>Social Links</h2>
+					<div class="fl-row">
+						<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/abdul-rehman-khan-6505a4160/">
+							<div class="social-button" title="Linkedin">
+								<i class="fa-brands fa-xl fa-linkedin-in"></i>
+							</div>
+						</a>
+						<a target="_blank" rel="noopener noreferrer" href="https://github.com/codewith-ark">
+							<div class="social-button" title="GitHub">
+								<i class="fa-brands fa-xl fa-github"></i>
+							</div>
+						</a>
+						<a target="_blank" rel="noopener noreferrer" href="https://twitter.com/@codewithark">
+							<div class="social-button" title="Twitter">
+								<i class="fa-brands fa-xl fa-twitter"></i>
+							</div>
+						</a>
+						<a target="_blank" rel="noopener noreferrer" href="mailto:khan456.tdm@gmail.com">
+							<div class="social-button" title="Email">
+								<i class="fa-solid fa-xl fa-envelope"></i>
+							</div>
+						</a>
+					</div> <!--End of social link buttons-->
+				</div> <!--End of social links-->
+			</div>
 		</section>
 	</main>
 	<footer class="fl-row footer">
 		<div class="space-50">&copy; Abdul Rehman Khan. All rights reserved.</div>
 		<div class="space-50 txt-rtl">Designer - Developer - Content Writer</div>
 	</footer>
-
-	<script src="scripts/index.js"></script>
 
 </body>
 

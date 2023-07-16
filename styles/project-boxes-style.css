@@ -45,6 +45,9 @@
     cursor: pointer;
     transform: translate(-8px, -8px);
 }
+.description{
+    font-weight: 400;
+}
 .lang-indicator {
     padding: 8px;
     width: fit-content;
