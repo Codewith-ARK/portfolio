@@ -235,6 +235,9 @@ form input[type=submit]:hover {
     .social-links {
         align-items: center;
     }
+    #contact-me{
+        margin: auto;
+    }
 }
 
 @media (min-width: 1024px) {
