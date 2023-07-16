@@ -2,6 +2,12 @@
     --main-heading-color: #fff;
     --container-border-radius: 8px;
 }
+
+/** Projects Section **/
+#projects {
+    margin: 0px 9.375rem 0;
+}
+
 .card-heading {
     font-family: 'Outfit', sans-serif;
     font-weight: 700;
@@ -9,6 +15,7 @@
     text-transform: uppercase;
     display: inline-block;
 }
+
 .date {
     display: inline-block;
     text-transform: uppercase;
@@ -16,6 +23,7 @@
     color: #D9D9D9;
     font-weight: 700;
 }
+
 .elipse {
     margin: auto 12px;
     width: 8px;
@@ -24,7 +32,9 @@
     background-color: #D9D9D9;
     display: inline-block;
 }
-.card>h2, .card>p {
+
+.card>h2,
+.card>p {
     margin: 0 0 12px;
     /* text-align: justify; */
 }
@@ -45,9 +55,11 @@
     cursor: pointer;
     transform: translate(-8px, -8px);
 }
-.description{
+
+.description {
     font-weight: 400;
 }
+
 .lang-indicator {
     padding: 8px;
     width: fit-content;
@@ -57,23 +69,27 @@
     bottom: 5px;
 
 }
+
 .lang-elipse {
     width: 8px;
     height: 8px;
     border-radius: 8px;
     display: inline-block;
 }
-.p-lang{
+
+.p-lang {
     font-weight: 700;
     display: inline;
 }
+
 .card-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1.25rem;
 }
-.card-container a{
+
+.card-container a {
     text-decoration: inherit;
     color: inherit;
     width: 100%;
