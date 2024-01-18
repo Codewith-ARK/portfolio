@@ -25,6 +25,5 @@ I am passionate about building innovative and user-friendly software. I am also 
 
 ## Contact Me
 
-* Email: khan456.tdm@gmail.com
 * LinkedIn: [your LinkedIn profile URL]
 * Twitter: @codewithark
