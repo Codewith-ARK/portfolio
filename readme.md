@@ -25,5 +25,5 @@ I am passionate about building innovative and user-friendly software. I am also 
 
 ## Contact Me
 
-* LinkedIn: [your LinkedIn profile URL]
-* Twitter: @codewithark
+* [LinkedIn](https://www.linkedin.com/in/iamark/)
+* [X](https://twitter.com/codewithark)
