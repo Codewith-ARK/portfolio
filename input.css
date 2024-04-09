@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  a,
+  button {
+    font-family: "Syne", sans-serif;
+  }
+  body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+}
+@layer components {
+  section {
+    padding: 0 2rem 3rem;
+  }
+
+  .spin {
+    animation: spin 5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  }
+
+  .active {
+    position: relative;
+    padding-bottom: 2px;
+  }
+  .active::after {
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(to right, #6ef3ae, #008e44);
+    border-radius: 100%;
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}

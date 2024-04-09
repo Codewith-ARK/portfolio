@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARK - Blog</title>
+
+  <link rel="shortcut icon" href="assets/icons/logo.svg" type="image/x-icon">
+
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="../styles/index.css">
+
+  <script src="scripts/index.js" defer></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- <header>
+    <nav class="flex justify-between gap-3 p-4">
+      <a href="#" class="flex gap-3 items-center">
+        <img class="w-8" src="assets/icons/logo.svg" alt="brand logo">
+        <div class="h-2/3 border border-white opacity-40"></div>
+        <p class="text-white">Abdul Rehman Khan</p>
+      </a>
+      <div class="md:hidden p-2 border-2 border-transparent active:border-white rounded-xl" onclick="openSideNav()">
+        <img src="assets/icons/menu.svg" alt="hamburger icon">
+      </div>
+    </nav>
+  </header> -->
+
+  <header class="py-3 px-9 flex justify-between items-center gap-6">
+    <a href="../index.html" class="spin">
+      <img src="../assets/img/logo.svg" alt="brand logo">
+    </a>
+    <div id="navbar-toggler" class="block lg:hidden">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+    </div>
+    <div id="nav-item" class="z-10 hidden absolute left-0 top-20 px-4 py-4 bg-[#001116] lg:bg-transparent w-full lg:static lg:block">
+      <div class="w-full flex gap-4 flex-col lg:flex-row lg:justify-end lg:bg-transparent">
+        <a href="../index.html" class="active">Home</a>
+				<a href="index.html">Blog</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <a class="p-3 rounded-full border-2 border-[#6EF3AE] hover:bg-[#6EF3AE] hover:text-white transition-all cursor-pointer fixed right-7 bottom-4 animate-bounce"
+      onclick="topFunction()" id="myBtn" title="Go to top"><img src="assets/icons/move-up.svg" alt="move up"></a>
+    <div class="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4">
+      <section id="sideNavWrapper" class="hidden md:block">
+        <div class="px-4 py-8 flex flex-col gap-4 last:border-b-0 sticky left-0 top-0">
+          <h1 class="text-white text-6xl">Blog</h1>
+          <div class="divider w-full md:w-2/3"></div>
+          <div id="filters" class="flex flex-wrap flex-row md:flex-col items-start gap-3">
+            <button class="px-6 py-2 active rounded-full">All</button>
+            <button class="px-6 py-2 border-2 rounded-full">Development</button>
+            <button class="px-6 py-2 border-2 rounded-full">Design</button>
+            <button class="px-6 py-2 border-2 rounded-full">Guide</button>
+          </div>
+        </div>
+      </section>
+      <section class="md:col-span-2 relative">
+        <!-- <div id="graphic" class="fixed bottom-0 right-5 w-80 aspect-square rounded-full bg-sky-400 blur-3xl"></div> -->
+        <!-- Post card -->
+        <a href="#" class="border-b border-b-white/[0.4]">
+          <div
+            class="card w-full p-4 flex flex-col lg:flex-row gap-6 hover:bg-white/[0.2] rounded-2xl transition-all relative">
+            <img src="https://placehold.co/240x180" alt="">
+            <div class="flex flex-col gap-2 justify-between">
+              <div class="flex flex-col gap-3">
+                <h3 class="text-4xl">This is a long form title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, placeat sapiente dolor laborum omnis
+                  non minus odio soluta suscipit, obcaecati rem reiciendis. Autem voluptas ullam mollitia rem harum
+                  consequuntur est!</p>
+              </div>
+              <div class="flex gap-3">
+                <h6 class="uppercase text-xs">03.apr.2024</h6>
+                <div class="min-h-full border border-white/[0.4]"></div>
+                <h6 class="uppercase text-xs">Development</h6>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Post card -->
+        <a href="#" class="border-b border-b-white/[0.4]">
+          <div
+            class="card w-full p-4 flex flex-col lg:flex-row gap-6 hover:bg-white/[0.2] rounded-2xl transition-all relative">
+            <img src="https://placehold.co/240x180" alt="">
+            <div class="flex flex-col gap-2 justify-between">
+              <div class="flex flex-col gap-3">
+                <h3 class="text-4xl">This is a long form title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, placeat sapiente dolor laborum omnis
+                  non minus odio soluta suscipit, obcaecati rem reiciendis. Autem voluptas ullam mollitia rem harum
+                  consequuntur est!</p>
+              </div>
+              <div class="flex gap-3">
+                <h6 class="uppercase text-xs">03.apr.2024</h6>
+                <div class="min-h-full border border-white/[0.4]"></div>
+                <h6 class="uppercase text-xs">Development</h6>
+              </div>
+            </div>
+          </div>
+        </a>
+
+      </section>
+      <section class="hidden 2xl:block"></section>
+    </div>
+  </main>
+  <script src="scripts/index.js"></script>
+</body>
+
+</html>

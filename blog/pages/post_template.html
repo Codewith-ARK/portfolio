@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post Template</title>
+
+  <link rel="shortcut icon" href="assets/icons/logo.svg" type="image/x-icon">
+
+  <link rel="stylesheet" href="../styles/index.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <nav class="flex gap-3 p-4">
+      <a href="#" class="flex gap-3 items-center">
+        <img class="w-8 aspect-square" src="assets/icons/logo.svg" alt="brand logo">
+        <div class="h-2/3 border border-white opacity-40"></div>
+        <p class="text-white">Abdul Rehman Khan</p>
+      </a>
+    </nav>
+  </header>
+  <main>
+    <div class="grid grid-cols-4">
+      <section id="sideNav" class="px-4 py-8 hidden md:flex flex-col gap-4 last:border-b-0 sticky left-0 top-0 ">
+        <h1 class="text-white text-6xl">Blog</h1>
+        <div class="divider"></div>
+        <div id="filters" class="flex flex-col items-start gap-3">
+          <button class="px-6 py-2 active rounded-full">All</button>
+          <button class="px-6 py-2 border-2 rounded-full">Development</button>
+          <button class="px-6 py-2 border-2 rounded-full">Design</button>
+          <button class="px-6 py-2 border-2 rounded-full">Guide</button>
+        </div>
+      </section>
+
+      <section class="col-span-2 p-4">
+        <div class="article-wrapper flex flex-col gap-3">
+          <a href="../index.html" id="navigation" class="inline-flex w-fit px-4 py-2 rounded-full transition-all gap-2 cursor-pointer border-2 border-[#6EF3AE] hover:bg-[#6EF3AE] hover:text-white">
+            <img class="text-white" src="../assets/icons/move-left.svg" alt="go back" title="Go back">
+            <p>Go Back</p>
+          </a>
+
+          <h1 id="post-title" class="text-4xl">This is the title of my post</h1>
+          <img id="post-image" class="w-full aspect-video rounded-2xl object-cover" src="https://placehold.co/280x180" alt="">
+
+          <h3>Written by:</h3>
+          <div class="flex gap-2">
+            <img class="border-2 p-1 rounded-2xl border-[#6EF3AE]" src="https://placehold.co/58" alt="author image">
+            <div class="flex flex-col gap-1 justify-center">
+              <h4 class="text-[#6EF3AE]">Abdul Rehman Khan</h4>
+              <h4 class="text-white/[0.4]">Full Stack Web Developer</h4>
+            </div>
+          </div>
+          <p class="text-base leading-6 mb-3 tracking-wide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, nulla laborum inventore, amet
+            voluptate doloremque debitis illum eaque ipsum vero, repudiandae eius dicta aperiam modi quidem quibusdam
+            provident molestias cum accusantium velit nobis ex architecto tempore? Consequuntur repudiandae placeat
+            aliquid nam rem a illum sint, architecto blanditiis, culpa aperiam minus.</p>
+          <p class="text-base leading-6 mb-3 tracking-wide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis adipisci, est praesentium magnam
+            reiciendis debitis id ipsa alias sequi sunt. Omnis ipsa recusandae dolorem autem odit officiis similique, at
+            dolorum sequi eum facere corporis optio exercitationem, suscipit hic tenetur molestiae nobis nihil ipsam
+            minus! Inventore.</p>
+          <p class="text-base leading-6 mb-3 tracking-wide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ipsa voluptates, repudiandae labore
+            fugit quas porro perspiciatis molestiae repellat nihil iste delectus, nemo nam. Sequi obcaecati sed
+            reprehenderit cum quam fuga. A eaque excepturi harum, cum ex voluptas recusandae laboriosam ipsam
+            dignissimos voluptatum expedita quidem ducimus ipsa rerum ullam, dolorum mollitia! Obcaecati alias
+            blanditiis vero aliquam, perspiciatis ipsa a illum, est accusamus, dignissimos earum maxime incidunt
+            doloribus expedita veniam autem pariatur. Hic, eum? Ducimus voluptates praesentium esse ab quaerat cum.</p>
+          <p class="text-base leading-6 mb-3 tracking-wide">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam laborum similique quos ratione aperiam
+            totam quasi mollitia eum, ea quidem. Dolore facilis, sit vero voluptatibus et impedit ab cupiditate
+            asperiores reiciendis laboriosam deleniti, velit vel modi eveniet sapiente! Tenetur harum nobis earum
+            voluptatum. Obcaecati totam, sequi voluptatum, maiores harum nisi earum ullam, incidunt quas saepe neque
+            libero? Illo magnam saepe veritatis eligendi voluptates voluptatem adipisci delectus ab, corporis harum?
+            Quaerat eaque ea optio illo quibusdam qui incidunt sapiente quis distinctio debitis numquam, ratione, non
+            error nostrum labore?</p>
+
+            <div class="border-b-2 border-[#6EF3AE]"></div>
+        </div>
+        <a class="p-3 rounded-full border-2 border-[#6EF3AE] hover:bg-[#6EF3AE] hover:text-white transition-all cursor-pointer fixed right-7 bottom-4" onclick="topFunction()" id="myBtn" title="Go to top"><img src="../assets/icons/move-up.svg" alt="move up"></a>
+      </section>
+      <section>
+
+      </section>
+    </div>
+  </main>
+  <script src="../scripts/index.js"></script>
+</body>
+
+</html>

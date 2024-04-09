@@ -34,298 +34,354 @@
 	<meta name="twitter:image" content="https://iamark.tech/assets/pfp.jpg">
 
 
-	<title>Abdul Rehman Khan || Front End Developer</title>
-	<link rel="icon" type="image/x-icon" href="assets/favicon.png">
+	<title>Abdul Rehman Khan - Full Stack Web Developer</title>
+	<link rel="icon" type="image/x-icon" href="assets/img/logo.svg">
 
-	<link rel="stylesheet" href="styles/homepage/home_page_style.css" />
-	<link rel="stylesheet" href="styles/homepage/home_page__hero.css" />
-	<link rel="stylesheet" href="styles/homepage/home_page__skills.css" />
-	<link rel="stylesheet" href="styles/homepage/home_page__projects.css" />
-	<link rel="stylesheet" href="styles/homepage/eplipses.css" />
-	<link rel="stylesheet" href="styles/homepage/home_page__contacts.css" />
-
-	<link rel="stylesheet" href="styles/global__styles.css" />
-	<link rel="stylesheet" href="styles/global__text_style.css">
+	<link rel="stylesheet" href="styles/index.css">
 
 	<script src="scripts/index.js"></script>
-	<script src="https://kit.fontawesome.com/8d6806cdef.js" crossorigin="anonymous"></script>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Syne:wght@400..800&display=swap" rel="stylesheet">
 </head>
 
-<body>
-	<nav>
-		<a href="#hero" id="active">Home</a>
-		<a href="#skills">Skills</a>
-		<a href="#projects">Projects</a>
-		<a href="#contact">Contact</a>
-	</nav>
-	<main>
-		<section id="hero">
-			<div class="hero-wrapper fl-row">
-				<div class="fl-col fl-justify-center space-50">
-					<div class="img-wrapper"></div>
-					<h1 class="hero-title">Abdul Rehman Khan</h1>
-					<h3 class="job-title">Front End Developer</h3>
-				</div>
-				<div class="fl-col space-50">
-					<div class="text-wrapper">
-						Hello There! I am Abdul Rehman Khan (ARK for short), a front end web developer. I like to design and develop
-						websites that are practical and easy to use by the end-user.
-					</div>
-					<div class="fl-row">
-						<!--! Looks ugly !-->
-						<!-- <a href="#" id="hire-me" class="button">Hire Me</a> -->
-						<a href="#contact" id="contact-me" class="button">Hire Me</a>
-					</div>
-				</div>
-			</div>
-			<img id="waves-right" src="assets/waves-right.svg" alt="bg image">
-			<img id="waves-left" src="assets/waves-left.svg" alt="bg image">
-		</section>
+<body class="dark:bg-[#01040C] dark:text-white scroll-smooth">
+  <header class="py-3 px-9 flex justify-between items-center gap-6">
+    <a href="index.html" class="spin">
+      <img src="assets/img/logo.svg" alt="brand logo">
+    </a>
+    <div id="navbar-toggler" class="block lg:hidden">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+    </div>
+    <div id="nav-item" class="z-10 hidden absolute left-0 top-20 px-4 py-4 bg-[#001116] lg:bg-transparent w-full lg:static lg:block">
+      <div class="w-full flex gap-4 flex-col lg:flex-row lg:justify-end lg:bg-transparent">
+        <a href="index.html" class="active">Home</a>
+				<a href="blog/index.html">Blog</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section id="home" class="px-8 relative h-screen">
+      <div class=" rounded-2xl overflow-clip z-10 h-full mix-blend-exclusion">
+        <img src="assets/img/bg.png" class="w-full h-full blur-[157px]" alt="image">
+      </div>
+      <div class="absolute inset-0 flex items-center justify-center">
+        <h1 class="text-white font-bold text-center text-4xl md:text-6xl w-3/4">Hey there, I am ARK, a full-stack web developer.
+        </h1>
+      </div>
+    </section>
 
-		<section id="skills">
-			<div class="">
-				<h2 class="">Skills</h2>
-			</div>
-			<div class="skill-container grid">
-				<div class="skill-card card">
-					<img src="assets/html.png" alt="skill logo">
-				</div>
-				<div class="skill-card card">
-					<img src="assets/css.png" alt="skill logo">
-				</div>
-				<div class="skill-card card">
-					<img src="assets/js.png" alt="skill logo">
-				</div>
-				<div class="skill-card card">
-					<img src="assets/flutter.png" alt="skill logo">
-				</div>
-				<div class="skill-card card">
-					<img src="assets/react.png" alt="skill logo">
-				</div>
-				<div class="skill-card card">
-					<img src="assets/java.png" alt="skill logo">
-				</div>
-				<div class="skill-card card">
-					<img src="assets/python.png" alt="skill logo">
-				</div>
-				<div class="skill-card card">
-					<img src="assets/bootstrap.png" alt="skill logo">
-				</div>
-				<div class="skill-card card">
-					<img src="assets/figma.png" alt="skill logo">
-				</div>
-				<div class="skill-card card ">
-					<img src="assets/ps.png" alt="skill logo">
-				</div>
-				<div class="skill-card card ">
-					<img src="assets/ai.png" alt="skill logo">
-				</div>
-			</div>
-		</section>
+    <section id="skills" class="">
+      <div class="flex mb-4">
+        <div class="min-h-full w-[6px] relative right-2 rounded-md bg-gradient-to-b from-[#6EE4A6] to-[#008E44]"></div>
+        <h2 class="text-4xl font-bold">Skills</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+        <div
+          class="px-6 py-3 grayscale hover:grayscale-0 flex justify-between items-end gap-3 border border-gray-800 rounded-2xl opacity-60 hover:border-gray-600 bg-gradient-to-t from-gray-900 to-[#001116]/[0.1] hover:opacity-100 transition-all cursor-pointer">
+          <h2>React.js</h2>
+          <img class="h-20 aspect-auto rounded-xl" src="assets/tech-logo/react.png" alt="icon">
+        </div>
+        <div
+          class="px-6 py-3 grayscale hover:grayscale-0 flex justify-between items-end gap-3 border border-gray-800 rounded-2xl opacity-60 hover:border-gray-600 bg-gradient-to-t from-gray-900 to-[#001116]/[0.1] hover:opacity-100 transition-all cursor-pointer">
+          <h2>Next.js</h2>
+          <img class="h-20 aspect-auto rounded-xl" src="assets/tech-logo/next.svg" alt="icon">
+        </div>
+        <div
+          class="px-6 py-3 grayscale hover:grayscale-0 flex justify-between items-end gap-3 border border-gray-800 rounded-2xl opacity-60 hover:border-gray-600 bg-gradient-to-t from-gray-900 to-[#001116]/[0.1] hover:opacity-100 transition-all cursor-pointer">
+          <h2>Node.js</h2>
+          <img class="h-20 aspect-auto rounded-xl" src="assets/tech-logo/nodejs.svg" alt="icon">
+        </div>
+        <div
+          class="px-6 py-3 grayscale hover:grayscale-0 flex justify-between items-end gap-3 border border-gray-800 rounded-2xl opacity-60 hover:border-gray-600 bg-gradient-to-t from-gray-900 to-[#001116]/[0.1] hover:opacity-100 transition-all cursor-pointer">
+          <h2>MongoDB</h2>
+          <img class="h-20 aspect-auto rounded-xl" src="assets/tech-logo/mongodb.png" alt="icon">
+        </div>
+        <div
+          class="px-6 py-3 grayscale hover:grayscale-0 flex justify-between items-end gap-3 border border-gray-800 rounded-2xl opacity-60 hover:border-gray-600 bg-gradient-to-t from-gray-900 to-[#001116]/[0.1] hover:opacity-100 transition-all cursor-pointer">
+          <h2>PostgreSQL</h2>
+          <img class="h-20 aspect-auto rounded-xl" src="assets/tech-logo/PostgreSQL.png" alt="icon">
+        </div>
+      
+        <div
+          class="px-6 py-3 grayscale hover:grayscale-0 flex justify-between items-end gap-3 border border-gray-800 rounded-2xl opacity-60 hover:border-gray-600 bg-gradient-to-t from-gray-900 to-[#001116]/[0.1] hover:opacity-100 transition-all cursor-pointer">
+          <h2>TypeScript</h2>
+          <img class="h-20 aspect-auto rounded-xl" src="assets/tech-logo/typescript.webp" alt="icon">
+        </div>
+      
+        <div
+          class="px-6 py-3 grayscale hover:grayscale-0 flex justify-between items-end gap-3 border border-gray-800 rounded-2xl opacity-60 hover:border-gray-600 bg-gradient-to-t from-gray-900 to-[#001116]/[0.1] hover:opacity-100 transition-all cursor-pointer">
+          <h2>JavaScript</h2>
+          <img class="h-20 aspect-auto rounded-xl" src="assets/tech-logo/js.png" alt="icon">
+        </div>
+      
+        <div
+          class="px-6 py-3 grayscale hover:grayscale-0 flex justify-between items-end gap-3 border border-gray-800 rounded-2xl opacity-60 hover:border-gray-600 bg-gradient-to-t from-gray-900 to-[#001116]/[0.1] hover:opacity-100 transition-all cursor-pointer">
+          <h2>Tailwind CSS</h2>
+          <img class="h-20 aspect-auto rounded-xl" src="assets/tech-logo/tailwind.png" alt="icon">
+        </div>
+        <div
+          class="px-6 py-3 grayscale hover:grayscale-0 flex justify-between items-end gap-3 border border-gray-800 rounded-2xl opacity-60 hover:border-gray-600 bg-gradient-to-t from-gray-900 to-[#001116]/[0.1] hover:opacity-100 transition-all cursor-pointer">
+          <h2>Bootstrap CSS</h2>
+          <img class="h-20 aspect-auto rounded-xl" src="assets/tech-logo/bootstrap.png" alt="icon">
+        </div>
+      </div>
+      </div>
+    </section>
 
-		<section id="projects">
-			<div class="project-container">
+    <section id="services" class="">
+      <div class="flex mb-4">
+        <div class="min-h-full w-[6px] relative right-2 rounded-md bg-gradient-to-b from-[#6EE4A6] to-[#008E44]"></div>
+        <h2 class="text-4xl font-bold">Services</h2>
+      </div>
 
-				<div class="">
-					<h2 class="">Projects</h2>
-				</div>
-
-				<div class="card-container">
-					<a href="https://alkarim.cyclic.app/" target="_blank" rel="noopener noreferrer">
-						<div class="card">
-							<h3 class="card-heading">AL-Karim Institute Website</h3>
-							<div class="elipse"></div>
-							<p class="date">29 Aug 2023</p>
-							<p class="description">
-								A professional website for a local business. With user-friendly navigation, responsive
-								design, and visually appealing layouts.
-							</p>
-							<div class="lang-indicator html-lang">
-								<div class="html-elipse lang-elipse"></div>
-								<p class="p-lang">HTML</p>
-							</div>
-							<div class="lang-indicator css-lang">
-								<div class="css-elipse lang-elipse"></div>
-								<p class="p-lang">CSS</p>
-							</div>
-							<div class="lang-indicator js-lang">
-								<div class="js-elipse lang-elipse"></div>
-								<p class="p-lang">JavaScript</p>
-							</div>
-						</div>
-					</a>
-					<a href="https://abdullah-dev5.github.io/E-Commerce/" target="_blank" rel="noopener noreferrer">
-						<div class="card">
-							<h3 class="card-heading">GadgetWala - E-Commerce Website</h3>
-							<div class="elipse"></div>
-							<p class="date">31 July 2023</p>
-							<p class="description">
-								GadgetWala is a fully functional and fully responsive E-Commerce website.
-							</p>
-							<div class="lang-indicator html-lang">
-								<div class="html-elipse lang-elipse"></div>
-								<p class="p-lang">HTML</p>
-							</div>
-							<div class="lang-indicator css-lang">
-								<div class="css-elipse lang-elipse"></div>
-								<p class="p-lang">CSS</p>
-							</div>
-							<div class="lang-indicator js-lang">
-								<div class="js-elipse lang-elipse"></div>
-								<p class="p-lang">JavaScript</p>
-							</div>
-							<div class="lang-indicator css-lang">
-								<div class="css-elipse lang-elipse"></div>
-								<p class="p-lang">jQuery</p>
-							</div>
-						</div>
-					</a>
-					<a href="projects/hairday_website_webdev/index.html" target="_blank" rel="noopener noreferrer">
-						<div class="card">
-							<h3 class="card-heading">Hair Day Website Development</h3>
-							<div class="elipse"></div>
-							<p class="date">10 Mar 2022</p>
-							<p class="description">
-								A professional website for an imaginary
-								brand. With user-friendly navigation, responsive
-								design, and visually appealing layouts.
-							</p>
-							<div class="lang-indicator html-lang">
-								<div class="html-elipse lang-elipse"></div>
-								<p class="p-lang">HTML</p>
-							</div>
-							<div class="lang-indicator css-lang">
-								<div class="css-elipse lang-elipse"></div>
-								<p class="p-lang">CSS</p>
-							</div>
-							<div class="lang-indicator js-lang">
-								<div class="js-elipse lang-elipse"></div>
-								<p class="p-lang">JavaScript</p>
-							</div>
-						</div>
-					</a>
-					<a href="projects/whatsapp_flutter/index.html" target="_blank" rel="noopener noreferrer">
-						<div class="card">
-							<!-- <div class="new-indicator"></div> -->
-							<h3 class="card-heading">Whatsapp Clone</h3>
-							<div class="elipse"></div>
-							<p class="date">27 June 2023</p>
-							<p class="description">
-								Utilized Flutter and Firebase technologies to build a robust and scalable messaging platform resembling
-								WhatsApp.
-							</p>
-							<div class="lang-indicator flutter-lang">
-								<div class="flutter-elipse lang-elipse"></div>
-								<p class="p-lang">Flutter</p>
-							</div>
-						</div>
-					</a>
-					<a href="projects/mockup_website_figma/index.html" target="_blank" rel="noopener noreferrer">
-						<div class="card">
-							<h3 class="card-heading">
-								Krypto (under development)
-							</h3>
-							<div class="elipse"></div>
-							<p class="date">10 Mar 2022</p>
-							<p class="description">
-								A design mockup created for a fictional crypto comapny. The project was designed in figma and developed
-								using HTMl, CSS and JavaScript
-							</p>
-							<div class="lang-indicator html-lang">
-								<div class="html-elipse lang-elipse"></div>
-								<p class="p-lang">HTML</p>
-							</div>
-							<div class="lang-indicator css-lang">
-								<div class="css-elipse lang-elipse"></div>
-								<p class="p-lang">CSS</p>
-							</div>
-							<div class="lang-indicator js-lang">
-								<div class="js-elipse lang-elipse"></div>
-								<p class="p-lang">JavaScript</p>
-							</div>
-							<div class="lang-indicator figma-lang">
-								<div class="figma-elipse lang-elipse"></div>
-								<p class="p-lang">Figma</p>
-							</div>
-						</div>
-					</a>
-					<a href="projects/notes_app_js/index.html" target="_blank" rel="noopener noreferrer">
-						<div class="card">
-							<h3 class="card-heading">Todo-List Application</h3>
-							<div class="elipse"></div>
-							<p class="date">10 Mar 2022</p>
-							<p class="description">
-								A functional notes/to-do list application built using JavaScript. Allowing users to add, edit, and
-								remove notes and to-do items.
-								Designed the application with a visually appealing interface, focusing on a user-friendly and intuitive
-								design.
-								Ensured smooth functionality and responsiveness of the application across different devices.
-							</p>
-							<div class="lang-indicator js-lang">
-								<div class="js-elipse lang-elipse"></div>
-								<p class="p-lang">JavaScript</p>
-							</div>
-						</div>
-					</a>
-				</div> <!--card container-->
-			</div> <!--project container-->
-		</section>
-		<section id="contact">
-			<h2>Contact Me</h2>
-			<div class="fl-row">
+      <div class="flex justify-evenly flex-col flex-wrap items-center md:flex-row gap-4">
+        <div class="w-full grow sm:w-auto px-6 py-3 grayscale 
+        flex flex-col justify-between items-center gap-3 
+        border border-gray-800 rounded-2xl opacity-60
+        hover:grayscale-0 hover:border-gray-600 hover:opacity-100
+        bg-gradient-to-t from-gray-900 to-[#001116]/[0.1]
+        transition-all cursor-pointer      
+        ">
+          <div class="py-12">
+            <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-app-window-mac">
+              <rect width="20" height="16" x="2" y="4" rx="2" />
+              <path d="M6 8h.01" />
+              <path d="M10 8h.01" />
+              <path d="M14 8h.01" />
+            </svg>
+          </div>
+          <h2 class="text-xl">Front-End Development</h2>
+        </div>
 
 
-				<div class="space-50">
-					<form class="contact-form" method="POST" action="https://formsubmit.co/4d6c2573499e4ea054a3916c136adc14 ">
-						<label for="username">Name</label>
-						<input type="text" name="username" id="username" placeholder="Enter name" required>
-						<label for="email">Email</label>
-						<input type="email" name="email" id="email" placeholder="Enter email" required>
-						<label for="message">Message</label>
-						<textarea name="message" id="message" placeholder="Your message" required></textarea>
-						<input type="submit" value="Send Message" name="submit">
+        <div class="w-full grow sm:w-auto px-6 py-3 grayscale 
+        flex flex-col justify-between items-center gap-3 
+        border border-gray-800 rounded-2xl opacity-60
+        hover:grayscale-0 hover:border-gray-600 hover:opacity-100
+        bg-gradient-to-t from-gray-900 to-[#001116]/[0.1]
+        transition-all cursor-pointer      
+        ">
+          <div class="py-12">
+            <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-server">
+              <rect width="20" height="8" x="2" y="2" rx="2" ry="2" />
+              <rect width="20" height="8" x="2" y="14" rx="2" ry="2" />
+              <line x1="6" x2="6.01" y1="6" y2="6" />
+              <line x1="6" x2="6.01" y1="18" y2="18" />
+            </svg>
+          </div>
+          <h2 class="text-xl">Back-End Development</h2>
+        </div>
 
-						<input type="hidden" name="_template" value="table">
-						<!-- <input type="hidden" name="_captcha" value="false"> -->
-						<input type="hidden" name="_subject" value="Response from Contact me">
-						<input type="hidden" name="_autoresponse"
-							value="Thank you for contacting me at: iamARK.tech. I will reach out to you as soon as possible. :D">
-					</form>
-				</div>
-				<div class="space-50 social-links fl-col">
-					<h2>Social Links</h2>
-					<div class="fl-row">
-						<a target="_blank" rel="noopener noreferrer"
-							href="https://www.linkedin.com/in/abdul-rehman-khan-6505a4160/">
-							<div class="social-button" title="Linkedin">
-								<i class="fa-brands fa-xl fa-linkedin-in"></i>
-							</div>
-						</a>
-						<a target="_blank" rel="noopener noreferrer" href="https://github.com/codewith-ark">
-							<div class="social-button" title="GitHub">
-								<i class="fa-brands fa-xl fa-github"></i>
-							</div>
-						</a>
-						<a target="_blank" rel="noopener noreferrer" href="https://twitter.com/@codewithark">
-							<div class="social-button" title="Twitter">
-								<i class="fa-brands fa-xl fa-twitter"></i>
-							</div>
-						</a>
-						<a target="_blank" rel="noopener noreferrer" href="mailto:khan456.tdm@gmail.com">
-							<div class="social-button" title="Email">
-								<i class="fa-solid fa-xl fa-envelope"></i>
-							</div>
-						</a>
-					</div> <!--End of social link buttons-->
-				</div> <!--End of social links-->
-			</div>
-		</section>
-	</main>
-	<footer class="fl-row footer">
-		<div class="space-50">&copy; Abdul Rehman Khan. All rights reserved.</div>
-		<div class="space-50 txt-rtl">Designer - Developer - Content Writer</div>
-	</footer>
+        <div class="w-full grow sm:w-auto px-6 py-3 grayscale 
+                flex flex-col justify-between items-center gap-3 
+                border border-gray-800 rounded-2xl opacity-60
+                hover:grayscale-0 hover:border-gray-600 hover:opacity-100
+                bg-gradient-to-t from-gray-900 to-[#001116]/[0.1]
+                transition-all cursor-pointer      
+                ">
+          <div class="py-12">
+            <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-brush">
+              <path d="m9.06 11.9 8.07-8.06a2.85 2.85 0 1 1 4.03 4.03l-8.06 8.08" />
+              <path
+                d="M7.07 14.94c-1.66 0-3 1.35-3 3.02 0 1.33-2.5 1.52-2 2.02 1.08 1.1 2.49 2.02 4 2.02 2.2 0 4-1.8 4-4.04a3.01 3.01 0 0 0-3-3.02z" />
+            </svg>
+          </div>
+          <h2 class="text-xl">Web Design (UI/UX)</h2>
+        </div>
 
+        <div class="w-full grow sm:w-auto px-6 py-3 grayscale 
+        flex flex-col justify-between items-center gap-3 
+        border border-gray-800 rounded-2xl opacity-60
+        hover:grayscale-0 hover:border-gray-600 hover:opacity-100
+        bg-gradient-to-t from-gray-900 to-[#001116]/[0.1]
+        transition-all cursor-pointer      
+        ">
+          <div class="py-12">
+            <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-search-check">
+              <path d="m8 11 2 2 4-4" />
+              <circle cx="11" cy="11" r="8" />
+              <path d="m21 21-4.3-4.3" />
+            </svg>
+          </div>
+          <h2 class="text-xl">Search Engine Optimization</h2>
+        </div>
+
+
+    </section>
+
+    <section id="projects" class="">
+      <div class="flex mb-4">
+        <div class="min-h-full w-[6px] relative right-2 rounded-md bg-gradient-to-b from-[#6EE4A6] to-[#008E44]"></div>
+        <h2 class="text-4xl font-bold">Projects</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+
+        <a href="#">
+          <div class="group project_container max-h-[500px] overflow-clip relative rounded-none hover:rounded-2xl transition-all duration-500">
+            <img class="w-full group-hover:translate-y-[-450px] ease-out transition-all duration-1000"
+              src="assets/img/mockup/website-1.png" alt="landing page">
+            <div class="w-full px-3 py-4 absolute bottom-0 bg-gradient-to-t from from-black to-transparent">
+              <h3 class="text-2xl font-bold">E-Commerce Agency Landing Page</h3>
+              <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div
+              class="w-full absolute top-0 py-3 px-2 bg-gradient-to-b from-black to-transparents -translate-y-14 group-hover:translate-y-0 transition-transform duration-300">
+              <div class="flex justify-end">
+        
+                <div class="group p-2 border-2 rounded-full hover:bg-white transition-all cursor-pointer">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-external-link mix-blend-exclusion">
+                    <path d="M15 3h6v6" />
+                    <path d="M10 14 21 3" />
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="group project_container max-h-[500px] overflow-clip relative rounded-none hover:rounded-2xl transition-all duration-500">
+            <img class="w-full group-hover:translate-y-[-550px] ease-out transition-all duration-1000"
+              src="assets/img/mockup/website-2.png" alt="landing page">
+            <div class="w-full px-3 py-4 absolute bottom-0 bg-gradient-to-t from from-black to-transparent">
+              <h3 class="text-2xl font-bold">E-Commerce Agency Landing Page</h3>
+              <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div
+              class="w-full absolute top-0 py-3 px-2 bg-gradient-to-b from-black to-transparents -translate-y-14 group-hover:translate-y-0 transition-transform duration-300">
+              <div class="flex justify-end">
+        
+                <div class="group p-2 border-2 rounded-full hover:bg-white transition-all cursor-pointer">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-external-link mix-blend-exclusion">
+                    <path d="M15 3h6v6" />
+                    <path d="M10 14 21 3" />
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="group project_container max-h-[500px] overflow-clip relative rounded-none hover:rounded-2xl transition-all duration-500">
+            <img class="w-full group-hover:translate-y-[-80px] ease-out transition-all duration-1000"
+              src="assets/img/mockup/website-3.png" alt="landing page">
+            <div class="w-full px-3 py-4 absolute bottom-0 bg-gradient-to-t from from-black to-transparent">
+              <h3 class="text-2xl font-bold">E-Commerce Agency Landing Page</h3>
+              <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div
+              class="w-full absolute top-0 py-3 px-2 bg-gradient-to-b from-black to-transparents -translate-y-14 group-hover:translate-y-0 transition-transform duration-300">
+              <div class="flex justify-end">
+        
+                <div class="group p-2 border-2 rounded-full hover:bg-white transition-all cursor-pointer">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-external-link mix-blend-exclusion">
+                    <path d="M15 3h6v6" />
+                    <path d="M10 14 21 3" />
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="group project_container max-h-[500px] overflow-clip relative rounded-none hover:rounded-2xl transition-all duration-500">
+            <img class="w-full group-hover:translate-y-[-750px] ease-out transition-all duration-1000"
+              src="assets/img/mockup/website-4.png" alt="landing page">
+            <div class="w-full px-3 py-4 absolute bottom-0 bg-gradient-to-t from from-black to-transparent">
+              <h3 class="text-2xl font-bold">E-Commerce Agency Landing Page</h3>
+              <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div
+              class="w-full absolute top-0 py-3 px-2 bg-gradient-to-b from-black to-transparents -translate-y-14 group-hover:translate-y-0 transition-transform duration-300">
+              <div class="flex justify-end">
+        
+                <div class="group p-2 border-2 rounded-full hover:bg-white transition-all cursor-pointer">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-external-link mix-blend-exclusion">
+                    <path d="M15 3h6v6" />
+                    <path d="M10 14 21 3" />
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="group project_container max-h-[500px] overflow-clip relative rounded-none hover:rounded-2xl transition-all duration-500">
+            <img class="w-full group-hover:translate-y-[-100px] ease-out transition-all duration-1000"
+              src="assets/img/mockup/website-5.png" alt="landing page">
+            <div class="w-full px-3 py-4 absolute bottom-0 bg-gradient-to-t from from-black to-transparent">
+              <h3 class="text-2xl font-bold">E-Commerce Agency Landing Page</h3>
+              <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div
+              class="w-full absolute top-0 py-3 px-2 bg-gradient-to-b from-black to-transparents -translate-y-14 group-hover:translate-y-0 transition-transform duration-300">
+              <div class="flex justify-end">
+        
+                <div class="group p-2 border-2 rounded-full hover:bg-white transition-all cursor-pointer">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-external-link mix-blend-exclusion">
+                    <path d="M15 3h6v6" />
+                    <path d="M10 14 21 3" />
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="flex mb-4">
+        <div class="min-h-full w-[6px] relative right-2 rounded-md bg-gradient-to-b from-[#6EE4A6] to-[#008E44]"></div>
+        <h2 class="text-4xl font-bold">Contact</h2>
+      </div>
+
+      <div>
+          <form action="#" class="w-full lg:w-1/2 flex flex-col gap-4">
+            <div class="flex flex-col gap-2 ">
+              <label for="email">Email:</label>
+              <input class="grow bg-transparent text-white outline-none border-2 border-white/[0.4] focus:border-b-white py-2 px-3 rounded-xl" type="email" placeholder="example@email.com">
+            </div>
+            <div class="flex flex-col gap-2">
+              <label for="message">Message:</label>
+              <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter message"
+              class="bg-transparent text-white outline-none border-2 border-white/[0.4] focus:border-white rounded-xl py-2 px-3"
+              ></textarea>
+            </div>
+            <input type="submit" value="Submit" class="bg-sky-400 p-3 rounded-xl hover:bg-sky-600 transition-all cursor-pointer">
+          </form>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
 </body>
 
 </html>
