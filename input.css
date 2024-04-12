@@ -10,7 +10,8 @@
   h5,
   h6,
   a,
-  button {
+  button,
+  header {
     font-family: "Syne", sans-serif;
   }
   body {
@@ -26,11 +27,11 @@
     animation: spin 5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
   }
 
-  .active {
+  .active-link {
     position: relative;
     padding-bottom: 2px;
   }
-  .active::after {
+  .active-link::after {
     content: "";
     position: absolute;
     bottom: 2px;

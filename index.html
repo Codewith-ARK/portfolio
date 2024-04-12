@@ -39,7 +39,7 @@
 
 	<link rel="stylesheet" href="styles/index.css">
 
-	<script src="scripts/index.js"></script>
+	<script src="scripts/index.js" defer></script>
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,15 +54,15 @@
     <div id="navbar-toggler" class="block lg:hidden">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
     </div>
-    <div id="nav-item" class="z-10 hidden absolute left-0 top-20 px-4 py-4 bg-[#001116] lg:bg-transparent w-full lg:static lg:block">
+    <div id="nav-item" class="z-10 hidden absolute left-0 top-20 px-4 py-4 bg-[#01040C] lg:bg-transparent w-full lg:static lg:block">
       <div class="w-full flex gap-4 flex-col lg:flex-row lg:justify-end lg:bg-transparent">
-        <a href="index.html" class="active">Home</a>
+        <a href="index.html" class="active-link">Home</a>
 				<a href="blog/index.html">Blog</a>
       </div>
     </div>
   </header>
   <main>
-    <section id="home" class="px-8 relative h-screen">
+    <section id="home" class="px-4 xl:px-8 relative h-screen">
       <div class=" rounded-2xl overflow-clip z-10 h-full mix-blend-exclusion">
         <img src="assets/img/bg.png" class="w-full h-full blur-[157px]" alt="image">
       </div>
@@ -72,7 +72,7 @@
       </div>
     </section>
 
-    <section id="skills" class="">
+    <section id="skills" class="px-4 xl:px-8">
       <div class="flex mb-4">
         <div class="min-h-full w-[6px] relative right-2 rounded-md bg-gradient-to-b from-[#6EE4A6] to-[#008E44]"></div>
         <h2 class="text-4xl font-bold">Skills</h2>
@@ -130,7 +130,7 @@
       </div>
     </section>
 
-    <section id="services" class="">
+    <section id="services" class="px-4 xl:px-8">
       <div class="flex mb-4">
         <div class="min-h-full w-[6px] relative right-2 rounded-md bg-gradient-to-b from-[#6EE4A6] to-[#008E44]"></div>
         <h2 class="text-4xl font-bold">Services</h2>
@@ -214,11 +214,11 @@
           </div>
           <h2 class="text-xl">Search Engine Optimization</h2>
         </div>
-
+      </div>
 
     </section>
 
-    <section id="projects" class="">
+    <section id="projects" class="px-4 xl:px-8">
       <div class="flex mb-4">
         <div class="min-h-full w-[6px] relative right-2 rounded-md bg-gradient-to-b from-[#6EE4A6] to-[#008E44]"></div>
         <h2 class="text-4xl font-bold">Projects</h2>
@@ -358,7 +358,7 @@
       </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="px-4 xl:px-8">
       <div class="flex mb-4">
         <div class="min-h-full w-[6px] relative right-2 rounded-md bg-gradient-to-b from-[#6EE4A6] to-[#008E44]"></div>
         <h2 class="text-4xl font-bold">Contact</h2>
@@ -376,7 +376,7 @@
               class="bg-transparent text-white outline-none border-2 border-white/[0.4] focus:border-white rounded-xl py-2 px-3"
               ></textarea>
             </div>
-            <input type="submit" value="Submit" class="bg-sky-400 p-3 rounded-xl hover:bg-sky-600 transition-all cursor-pointer">
+            <input type="submit" value="Submit" class="bg-[#6ef3ae] p-3 rounded-xl hover:bg-[#008e44] transition-all cursor-pointer text-black/[0.6] font-semibold">
           </form>
       </div>
     </section>
