@@ -2,7 +2,8 @@
   "scripts": {
     "dev":"vite",
     "build":"vite build",
-    "css":"npx tailwindcss -i ./input.css -o ./styles/index.css --watch"
+    "css":"npx tailwindcss -i ./input.css -o ./styles/index.css --watch",
+    "preview":"vite preview"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.3",
