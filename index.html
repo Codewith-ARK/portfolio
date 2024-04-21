@@ -46,7 +46,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Syne:wght@400..800&display=swap" rel="stylesheet">
 </head>
 
-<body class="dark:bg-[#01040C] dark:text-white scroll-smooth">
+<body class="bg-[#01040C] text-white scroll-smooth">
   <header class="py-3 px-9 flex justify-between items-center gap-6">
     <a href="index.html" class="spin">
       <img src="assets/img/logo.svg" alt="brand logo">
@@ -54,7 +54,7 @@
     <div id="navbar-toggler" class="block lg:hidden">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
     </div>
-    <div id="nav-item" class="z-10 hidden absolute left-0 top-20 px-4 py-4 bg-[#01040C] lg:bg-transparent w-full lg:static lg:block">
+    <div id="nav-item" class="z-10 hidden absolute left-0 top-20 px-4 py-4 bg-white shadow-2xl rounded-b-2xl lg:shadow-none border-b border-b-gray-800 lg:border-none bg-[#01040C] lg:bg-transparent w-full lg:static lg:block">
       <div class="w-full flex gap-4 flex-col lg:flex-row lg:justify-end lg:bg-transparent">
         <a href="index.html" class="active-link">Home</a>
 				<a href="blog/index.html">Blog</a>
@@ -381,7 +381,18 @@
       </div>
     </section>
   </main>
-  <footer></footer>
+  <footer class="bg-[#01040C] bg-gray-900 flex flex-col px-4 xl:px-8 py-4 rounded-t-3xl gap-4">
+    <div><p class="text-center">Copyright &copy; 2023 ARK.</p></div>
+    <div class="h-[1px] bg-white/[0.1] w-full"></div>
+    <div class="flex justify-center">
+      <div class="footer-links flex gap-7">
+        <a href="#">X</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">GitHub</a>
+        <a href="#">Behance</a>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
