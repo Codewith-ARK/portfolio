@@ -974,10 +974,6 @@ section {
   height: 100vh;
 }
 
-.h-24 {
-  height: 6rem;
-}
-
 .max-h-\[500px\] {
   max-height: 500px;
 }
@@ -2099,23 +2095,13 @@ section {
   border-color: rgb(255 255 255 / 0.4);
 }
 
-.border-b-white\/\[0\.4\] {
-  border-bottom-color: rgb(255 255 255 / 0.4);
-}
-
-.border-b-gray-900 {
-  --tw-border-opacity: 1;
-  border-bottom-color: rgb(17 24 39 / var(--tw-border-opacity));
-}
-
-.border-b-gray-600 {
-  --tw-border-opacity: 1;
-  border-bottom-color: rgb(75 85 99 / var(--tw-border-opacity));
-}
-
 .border-b-gray-800 {
   --tw-border-opacity: 1;
   border-bottom-color: rgb(31 41 55 / var(--tw-border-opacity));
+}
+
+.border-b-white\/\[0\.4\] {
+  border-bottom-color: rgb(255 255 255 / 0.4);
 }
 
 .bg-\[\#001116\] {
@@ -2150,10 +2136,6 @@ section {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-white\/\[0\.3\] {
-  background-color: rgb(255 255 255 / 0.3);
 }
 
 .bg-white\/\[0\.1\] {
@@ -2386,14 +2368,6 @@ section {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.pt-4 {
-  padding-top: 1rem;
-}
-
-.pb-4 {
-  padding-bottom: 1rem;
 }
 
 .text-left {
@@ -2632,6 +2606,10 @@ section {
 
 .decoration-wavy {
   text-decoration-style: wavy;
+}
+
+.underline-offset-8 {
+  text-underline-offset: 8px;
 }
 
 .antialiased {
@@ -3292,11 +3270,6 @@ section {
   .dark\:bg-\[\#01040C\] {
     --tw-bg-opacity: 1;
     background-color: rgb(1 4 12 / var(--tw-bg-opacity));
-  }
-
-  .dark\:bg-gray-900 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(17 24 39 / var(--tw-bg-opacity));
   }
 
   .dark\:text-white {
